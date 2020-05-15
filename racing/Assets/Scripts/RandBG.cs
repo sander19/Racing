@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RandBG : MonoBehaviour
+{
+    public Material[] materials;
+    void Start()
+    {
+        GetComponent <Skybox> ().material = materials[Random.Range(0, 9)];
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}
